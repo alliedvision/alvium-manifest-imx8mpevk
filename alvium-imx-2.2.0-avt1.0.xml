@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
+  <remote fetch="https://github.com/alliedvision" name="avt-github"/>
+
+  <submanifest name="nxp-imx-manifest" remote="nxp-imx" project="imx-manifest" 
+manifest-name="imx-5.15.71-2.2.0.xml" revision="b1dbe97d0f6dddd86e3426cd1d796b48c8f880a0" path="imx-bsp"/>
+
+  <project name="meta-alvium-avt" path="sources/meta-alvium-avt" remote="avt-github" revision="dev"> <!-- upstream="main" revision="87cf5b55a5738a6ae3a76d5206a8cf3f868a2b8d"-->
+      <linkfile dest="enabled_boards/imx8mpevk" src="tools/boards/imx8mpevk"/>
+  </project>
+  <project name="meta-imx-avt" path="sources/meta-imx-avt" remote="avt-github" revision="af0053c6b1b32f2103a48f0c42efee9be9aefc26"  upstream="main"/>
+
+</manifest>
