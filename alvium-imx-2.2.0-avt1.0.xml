@@ -13,6 +13,6 @@ manifest-name="imx-5.15.71-2.2.0.xml" revision="b1dbe97d0f6dddd86e3426cd1d796b48
       <linkfile dest="enabled_boards/imx8mpevk" src="tools/boards/imx8mpevk"/>
       <linkfile dest="setup-avt-release.sh" src="tools/setup-avt-release.sh"/>
   </project>
-  <project name="meta-imx-avt" path="sources/meta-imx-avt" remote="avt-github" revision="bf9a07323a00b4c23baddf4adb1f8b94eee0eaa1"  upstream="main"/>
+  <project name="meta-imx-avt" path="sources/meta-imx-avt" remote="avt-github" revision="ddf10d8b2504a8e2d0a384c8c01e29c29c51f384"  upstream="main"/>
 
 </manifest>
