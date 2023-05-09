@@ -59,7 +59,9 @@ The image contains three different device tree configuration.
 1. Two cameras connected to the board. Maximum width of both cameras is 2048. The camera on port CSI1 will be listed as "/dev/video3" and the camera on port CSI" as "/dev/video4". 
 2. One camera connected to CSI1. Maximum width of the cameras is 4096. The camera will be listed as "/dev/video3".
 3. One camera connected to CSI2. Maximum width of the cameras is 4096. The camera will be listed as "/dev/video3".
+
 The active configuration can easily be changed by using the tool "avt-board-config"
+
 All available configurations can be listed using the command:
 ```shell
 avt-board-config -l
@@ -83,9 +85,9 @@ After you have changed the configuration a reboot is required.
 - The V4L2Viewer does not support all formats, that the hardware supports.
 
 ### VimbaX
-- The payload size is limited to <value>. To test of the streaming with a configuration is possible please use the following formula to calculate the payload size
+- The payload size is limited to 66838560. To test of the streaming with a configuration is possible please use the following formula to calculate the payload size
     ```
-    <width> * <height> * <bpp>
+    payload size = <image width> * <image height> * <bytes per pixel>
     ```
 - When using the weston terminal, you have to manually set the GenICam TL search enviroment variable.
     ```shell 
