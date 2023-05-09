@@ -28,26 +28,26 @@ To install the driver and layer:
 
 1. Install the repo tool
 ```shell
-    mkdir -p ~/.bin
-    export PATH="${HOME}/.bin:${PATH}"
-    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
-    chmod a+rx ~/.bin/repo
-    echo "export PATH=\"\${HOME}/.bin:\${PATH}\""  >> ~/.bashrc
+mkdir -p ~/.bin
+export PATH="${HOME}/.bin:${PATH}"
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+chmod a+rx ~/.bin/repo
+echo "export PATH=\"\${HOME}/.bin:\${PATH}\""  >> ~/.bashrc
 ```
 2. Initialize project directory
 ```shell
-    mkdir -p imx8mpevk-yocto
-    cd imx8mpevk-yocto
-    repo init https://github.com/alliedvision/alvium-manifest-imx8mpevk
-    repo sync
+mkdir -p imx8mpevk-yocto
+cd imx8mpevk-yocto
+repo init https://github.com/alliedvision/alvium-manifest-imx8mpevk
+repo sync
 ```
 3. Prepare yocto build
 ```shell
-    source setup-avt-release.sh
+source setup-avt-release.sh
 ```
 4. Build the AVT Image with the command:  
 ```shell
-    bitbake avs-image-alvium-validation
+bitbake avs-image-alvium-validation
 ```
 5. Flash the image to the SD card.  If you have built the image with yocto, you can find the image here:
             <build_dir>/tmp/deploy/images/imx8mpevk/avs-image-alvium-validation-imx8mpevk.rootfs.wic.bz2
@@ -62,11 +62,11 @@ The image contains three different device tree configuration.
 The active configuration can easily be changed by using the tool "avt-board-config"
 All available configurations can be listed using the command:
 ```shell
-    avt-board-config -l
+avt-board-config -l
 ```
 The current configuration can be chaned with:
 ```shell
-    avt-board-config -s <index>
+avt-board-config -s <index>
 ```
 The index parameter for each configration is returned by the list all configurations command.
 After you have changed the configuration a reboot is required. 
@@ -83,12 +83,12 @@ Allied Vision V4L2Viewer:
 VimbaX:
 - The payload size is limited to <value>. To test of the streaming with a configuration is possible please use the following formula to calculate the payload size
     ```
-        <width> * <height> * <bpp>
+    <width> * <height> * <bpp>
     ```
 - When using the weston terminal, you have to manually set the GenICam TL search enviroment variable.
-```
+    ```shell 
     export GENICAM_GENTL64_PATH=<path to VimbaX directory>/cti
-```        
+    ```
 
 
 ## How to start a stream
