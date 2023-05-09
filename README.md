@@ -72,17 +72,17 @@ The index parameter for each configration is returned by the list all configurat
 After you have changed the configuration a reboot is required. 
 
 ## Limitations
-General:
+### General
 -  Maximum width of an image: 4096 pixels when only port 1 is used. Maximum width with both ports: 2048 pixels.
 -  When streaming with the pixelformat "AR24", the v4l2 control "Alpha component" must be set before the stream is started. If the value of the v4l2 control is zero, on image will be visible.
 -  For changing the camera feature via v4l2 controls, the v4l2 subdevice node of the cameras must be used. In many cases this is "/dev/v4l-subdev2".
 -  The digital binning is activated by changing the width and height. You can enter any value for the width and height but the size will be adjusted to the nearsted binning configuration.
 
-Allied Vision V4L2Viewer:
+### Allied Vision V4L2Viewer
 - When the framerate is limited to ~300 fps, when the frames are displayed.
 - The V4L2Viewer does not support all formats, that the hardware supports.
 
-VimbaX:
+### VimbaX
 - The payload size is limited to <value>. To test of the streaming with a configuration is possible please use the following formula to calculate the payload size
     ```
     <width> * <height> * <bpp>
