@@ -85,7 +85,7 @@ After you have changed the configuration, a reboot is required.
 - The V4L2Viewer does not support all formats that the hardware supports.
 
 ### Vimba X
-- The payload size is limited to 66838560. To test if the streaming with a configuration is possible, please use the following formula to calculate the payload size:
+- The payload size is limited to 66838560 when one of the single camera configurations is used and 33419280 for the two camera configuration. To test if the streaming with a configuration is possible, please use the following formula to calculate the payload size:
     ```
     payload size = <image width> * <image height> * <bytes per pixel>
     ```
