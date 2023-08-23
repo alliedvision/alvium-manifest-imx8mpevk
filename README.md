@@ -123,6 +123,6 @@ v4l2-ctl -d /dev/v4l-subdev2 --set-ctrl exposure=20000000,gain=100,brightness=0 
 gst-launch-1.0 v4l2src device=/dev/video3 ! video/x-raw,width=1920,height=1080,framerate=30/1,io-mode=dmabuf ! waylandsink sync=false -v
 ```
 
-### VimbaX
+### Vimba X
 To get get your Alvium CSI-2 camera and Vimba X up and running, read: [Getting Started with GenICam for CSI-2 and Vimba X](https://cdn.alliedvision.com/fileadmin/content/documents/products/software/software/Vimba/appnote/Getting_started_with_GenICam_for_CSI-2_VimbaX.pdf)
                 
