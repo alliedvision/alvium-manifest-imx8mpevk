@@ -100,11 +100,7 @@ After you have changed the configuration, a reboot is required.
 -  The digital binning is activated by changing the width and height. You can enter any value for the width and height but the size will be adjusted to the nearest binning configuration.
 
 ### Video4Linux2 compliance
-- The following v4l2-compliance test is expected to fail:
-    ```
-		fail: v4l2-test-formats.cpp(1297): cap->timeperframe.numerator == 0 || cap->timeperframe.denominator == 0
-	test VIDIOC_G/S_PARM: FAIL
-    ``` 
+- The VIDIOC_G/S_PARM v4l2-compliance test is expected to fail
 
 ### Allied Vision V4L2Viewer
 - The V4L2Viewer does not support all formats that the hardware supports.
