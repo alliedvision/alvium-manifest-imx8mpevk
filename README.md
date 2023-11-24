@@ -20,7 +20,7 @@ For GenICam for CSI2 access, Vimba X 2023-2 is required.
 ### Prerequisites
 -  i.MX 8M Plus EVK
 -  Host PC: See NXP's requirements for i.MX Yocto Project BSP Rev. 5.15.52-2.1.0 in the [i.MX Yocto Project User's Guide](https://www.nxp.com/docs/en/user-guide/IMX_YOCTO_PROJECT_USERS_GUIDE.pdf)
--  Alvium camera with Firmware 11.1
+-  Alvium camera with Firmware 12
 -  SD Card 8 GB
 
 ### Installation
@@ -55,7 +55,7 @@ To install the driver and layer:
 5. Flash the image to the SD card.  If you have built the image with yocto, you can find the image here:
             <build_dir>/tmp/deploy/images/imx8mpevk/avs-image-alvium-validation-imx8mpevk.rootfs.wic.bz2
 6. Boot the board.
-7. Check if the camera firmware version is 11.1 or higher. If the camera has an earlier firmware, perform an update with Vimba X Firmware Updater.
+7. Check if the camera firmware version is 12 or higher. If the camera has an earlier firmware, perform an update with Vimba X Firmware Updater.
 
 ### SDK Installation
 
@@ -68,7 +68,7 @@ Tip: For the prebake image, skip step 1 - 2 and start with step 3.
     ```
 3. Install the SDK on your system by running the installer script. If you have built the sdk, you can find it here:
    <build_dir>/tmp/deploy/sdk/fsl-imx-xwayland-glibc-x86_64-avs-image-alvium-validation-armv8a-imx8mpevk-toolchain-5.15-kirkstone.sh
-4. If you have installed the sdk to the default location. You can setup the build enviorment by running:
+4. If you have installed the sdk to the default location. You can setup the build environment by running:
    ```shell
    source /opt/fsl-imx-xwayland/5.15-kirkstone/environment-setup-armv8a-poky-linux 
    ```
