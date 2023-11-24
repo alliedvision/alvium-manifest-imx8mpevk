@@ -4,11 +4,11 @@
 This repository contains the manifest files for building the Allied Vision Alvium reference image for the i.MX 8M Plus Evaluation Kit. 
 
 ## Compatibility
-This release is compatible with:
+This release is tested with:
 - i.MX 8M Plus EVK
-- Alvium MIPI CSI-2 cameras with firmware 11.1 or higher
-- Qt 6.3.2 
+- Alvium MIPI CSI-2 cameras with firmware 12
 
+The release is based on the i.MX Yocto Project BSP Rev. 5.15.52-2.1.0 and contains the V4L2Viewer 2.2.0.
 You can use 2 Alvium cameras at the same time if resolution of each camera is less than 4 MP. This is a restriction of the SOM's hardware.
 The CSI2 clock frequency is configured to 681250000 Hz.
 
@@ -128,4 +128,16 @@ gst-launch-1.0 v4l2src device=/dev/video3 ! video/x-raw,width=1920,height=1080,f
 
 ### Vimba X
 To get get your Alvium CSI-2 camera and Vimba X up and running, read: [Getting Started with GenICam for CSI-2 and Vimba X](https://cdn.alliedvision.com/fileadmin/content/documents/products/software/software/Vimba/appnote/Getting_started_with_GenICam_for_CSI-2_VimbaX.pdf)
+
+# Beta Disclaimer
+
+Please be aware that all code revisions not explicitly listed in the Github Release section are
+considered a **Beta Version**.
+
+For Beta Versions, the following applies in addition to the BSD 2-Clause License:
+
+THE SOFTWARE IS PRELIMINARY AND STILL IN TESTING AND VERIFICATION PHASE AND IS PROVIDED ON AN “AS
+IS” AND “AS AVAILABLE” BASIS AND IS BELIEVED TO CONTAIN DEFECTS. THE PRIMARY PURPOSE OF THIS EARLY
+ACCESS IS TO OBTAIN FEEDBACK ON PERFORMANCE AND THE IDENTIFICATION OF DEFECTS IN THE SOFTWARE,
+HARDWARE AND DOCUMENTATION.
                 
