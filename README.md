@@ -8,7 +8,7 @@ This release is tested with:
 - i.MX 8M Plus EVK
 - Alvium MIPI CSI-2 cameras with firmware 12
 
-The release is based on the i.MX Yocto Project BSP Rev. 5.15.52-2.1.0 and contains the V4L2Viewer 2.2.0.
+The release is based on the i.MX Yocto Project BSP Rev. 5.15.71-2.2.0 and contains the V4L2Viewer 2.2.0.
 You can use 2 Alvium cameras at the same time if resolution of each camera is less than 4 MP. This is a restriction of the SOM's hardware.
 The CSI2 clock frequency is configured to 681250000 Hz.
 
@@ -19,7 +19,7 @@ For GenICam for CSI2 access, Vimba X 2023-2 is required.
 ## Quick Start
 ### Prerequisites
 -  i.MX 8M Plus EVK
--  Host PC: See NXP's requirements for i.MX Yocto Project BSP Rev. 5.15.52-2.1.0 in the [i.MX Yocto Project User's Guide](https://www.nxp.com/docs/en/user-guide/IMX_YOCTO_PROJECT_USERS_GUIDE.pdf)
+-  Host PC: See NXP's requirements for i.MX Yocto Project BSP Rev. 5.15.71-2.2.0 in the [i.MX Yocto Project User's Guide](https://www.nxp.com/docs/en/user-guide/IMX_YOCTO_PROJECT_USERS_GUIDE.pdf)
 -  Alvium camera with Firmware 12
 -  SD Card 8 GB
 
